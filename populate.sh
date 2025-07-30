@@ -12,6 +12,9 @@ case $VERSION in
 "8-4")
   DB_PORT=33064
   ;;
+"9-4")
+  DB_PORT=33070
+  ;;
 "mariadb-10-11")
   DB_PORT=33065
   ;;

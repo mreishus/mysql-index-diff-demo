@@ -13,6 +13,10 @@ case $VERSION in
   DB_PORT=33064
   DB_TYPE="MySQL 8.4"
   ;;
+"9-4")
+  DB_PORT=33070
+  DB_TYPE="MySQL 9.4"
+  ;;
 "mariadb-10-11")
   DB_PORT=33065
   DB_TYPE="MariaDB 10.11"

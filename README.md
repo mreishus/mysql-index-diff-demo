@@ -28,6 +28,7 @@ This experiment compares query performance across MySQL 8.0, MySQL 8.4, and Mari
    ```bash
    ./populate.sh 8-0 100000
    ./populate.sh 8-4 100000
+   ./populate.sh 9-4 100000
    ./populate.sh mariadb-10-11 100000
    ./populate.sh mariadb-11-4 100000
    ```
@@ -36,6 +37,7 @@ This experiment compares query performance across MySQL 8.0, MySQL 8.4, and Mari
    ```bash
    ./run_query.sh 8-0
    ./run_query.sh 8-4
+   ./run_query.sh 9-4
    ./run_query.sh mariadb-10-11
    ./run_query.sh mariadb-11-4
    ```
@@ -52,7 +54,9 @@ This experiment compares query performance across MySQL 8.0, MySQL 8.4, and Mari
 |----------|------|---------|
 | MySQL 8.0 | 33060 | mysql:8.0 |
 | MySQL 8.4 | 33064 | mysql:8.4 |
+| MySQL 9.4 | 33070 | mysql:9.4 |
 | MariaDB 10.11 | 33065 | mariadb:10.11 |
+| MariaDB 11.4  | 33066 | mariadb:11.4 |
 
 ## Data Distribution
 
