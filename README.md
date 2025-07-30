@@ -29,6 +29,7 @@ This experiment compares query performance across MySQL 8.0, MySQL 8.4, and Mari
    ./populate.sh 8-0 100000
    ./populate.sh 8-4 100000
    ./populate.sh mariadb-10-11 100000
+   ./populate.sh mariadb-11-4 100000
    ```
 
 2. Run the test query on each database:
@@ -36,6 +37,13 @@ This experiment compares query performance across MySQL 8.0, MySQL 8.4, and Mari
    ./run_query.sh 8-0
    ./run_query.sh 8-4
    ./run_query.sh mariadb-10-11
+   ./run_query.sh mariadb-11-4
+   ```
+
+  OR
+
+   ```bash
+   ./run_query_all.sh
    ```
 
 ## Database Details
