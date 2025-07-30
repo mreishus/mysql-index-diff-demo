@@ -31,4 +31,5 @@ DB_NAME=wordpress
 QUERY="EXPLAIN SELECT COUNT(1) FROM wp_posts WHERE post_type = 'post' AND post_status NOT IN ('trash','auto-draft','inherit','request-pending','request-confirmed','request-failed','request-completed') AND post_author = 1;"
 
 echo "Running on $DB_TYPE (port $DB_PORT):"
+mysql -h $DB_HOST -P $DB_PORT -u $DB_USER -p$DB_PASS $DB_NAME -e "SELECT VERSION();"
 mysql -h $DB_HOST -P $DB_PORT -u $DB_USER -p$DB_PASS $DB_NAME -e "$QUERY"
