@@ -15,9 +15,12 @@ case $VERSION in
 "mariadb-10-11")
   DB_PORT=33065
   ;;
+"mariadb-11-4")
+  DB_PORT=33066
+  ;;
 *)
   echo "Error: Unknown version '$VERSION'"
-  echo "Valid options: 8-0, 8-4, mariadb-10-11"
+  echo "Valid options: 8-0, 8-4, mariadb-10-11, maraidb-11-4"
   exit 1
   ;;
 esac

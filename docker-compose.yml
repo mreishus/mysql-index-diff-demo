@@ -37,9 +37,22 @@ services:
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
       - mariadb-10-11-data:/var/lib/mysql
 
+  mariadb-11-4:
+    image: mariadb:11.4
+    container_name: mariadb-11-4
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: wordpress
+    ports:
+      - "33066:3306"
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+      - mariadb-11-4-data:/var/lib/mysql
+
 
 volumes:
   mysql-8-0-data:
   mysql-8-4-data:
   mariadb-10-11-data:
+  mariadb-11-4-data:
 
